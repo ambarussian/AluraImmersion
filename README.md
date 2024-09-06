@@ -19,7 +19,7 @@ A hands-on website development project, supported by Google Gemini to assist in 
 - `data.js`: Contains the database with musicians and their details;
 - `app.js`: Search function that displays results according to the user's query.
 
---
+---
 
 ### Additional Details:
 <small>As my first code using the previously mentioned languages, I know there is a lot of room to explore and expand, such as redirecting the user to the artist's page they searched for, displaying song lyrics, allowing the user to favorite songs, and enabling them to access their profile. It is also interesting to explore the use of images, which faced some challenges throughout the project.
