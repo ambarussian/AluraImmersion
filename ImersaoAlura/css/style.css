@@ -1,0 +1,327 @@
+/* Imports the Poppins font family from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Index page body background */
+.app-background {
+    font-family: "Poppins", sans-serif;
+    background-color: #e0bc98;
+    /* The original code had a background image, but it turned out to be too large for GitHub to tolerate. Although I tried to upload the image to an image storage website to access it remotely, it failed for some unknown reason. Therefore, I switched to using a simple background color.
+    background-image: url('../images/background1.jpg'); >> The image was AI Generated and color edited
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Other page bodies styling */
+.getin-background {
+    font-family: "Poppins", sans-serif;
+    background-color: #e0bc98;
+    /* The original code had a background image, but it turned out to be too large for GitHub to tolerate. Although I tried to upload the image to an image storage website to access it remotely, it failed for some unknown reason. Therefore, I switched to using a simple background color.
+    background-image: url('../images/background2.jpg'); >> The image was AI Generated and color edited 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    height: 100vh; /* Fills the entire viewport height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+img {
+    width: 30%;
+    height: auto; /* Adapts to width */
+    border-radius: 50%;
+    float: right;
+}
+
+audio {
+    width: 70%;
+    height: 20px;
+    margin-top: 0.6rem;
+}
+
+/*---------------------------------------------*/
+/* Pop-up styling */
+#profileButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #292522;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2; /* Button always upon pop-up */
+}
+
+#profileButton:hover {
+    background-color: #3a3a3a;
+}
+
+/* Pop-up styling */
+.popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1; /* Stay above other contents */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Background-opacity */
+}
+
+/* Pop-up content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Top space and centralization */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    max-width: 200px;
+    height: 70%;
+    max-height: 400px;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+/* Closing pop-up */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#backButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #292522;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin: 1rem;
+    position : fixed;
+    bottom: 7%;
+    left: 0;
+}
+
+#backButton:hover {
+    background-color: #3a3a3a;
+}
+
+/*---------------------------------------------*/
+
+/* h1 titles styling */
+h1 {
+    font-size: 2.5rem;
+    color: #292522;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+/* Not found on app.js(line 52) */
+.diff-styling {
+    font-size: 1.5rem;
+    background-color : #ffffff96;
+    border-radius : 1.5rem;
+    width : 150px;
+    max-width : 150px;
+    height : 50px;
+    max-height : 50px;
+    position : fixed;
+    display : flex; /* Flexbox to alignment */
+    justify-content: center;    /* Horizontally aligned */
+    align-items: center;        /* Vertically aligned */
+    text-align: center;
+}
+
+/* Page sections styling */
+section {
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers items horizontally */
+    margin-bottom: 3rem; /* Spacing below each section */
+}
+
+/* Section inputs styling */
+section input {
+    width: 30rem; /* Width of the inputs */
+    border: none; /* Removes default border */
+    padding: 1rem; /* Internal spacing */
+    border-radius: 1.5rem; /* Rounded border */
+    margin-bottom: 1rem; /* Spacing below the inputs */
+    color: #292522; /* Text color */
+    font-size: 1rem; /* Font size */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+}
+
+/* Section buttons styling */
+section button {
+    padding: 0.8rem 1.2rem; /* Internal spacing of the button */
+    border: none; /* Removes default border */
+    border-radius: 1.5rem; /* Rounded border */
+    background-color: #292522; /* Background color of the button */
+    color: #ffffff; /* Text color of the button */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+}
+
+/* Adds hover effect to the search button */
+section button:hover {
+    background-color: #292522; /* Background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a more intense shadow */
+}
+
+/* Underlined button */
+.redirects-button {
+    color: #9c5c1c;
+    text-decoration: none; /* Removes the underline */
+    font-weight: bold;
+}
+
+/* Mouseover styling */
+.redirects-button:hover {
+    color: #9c5c1c;
+    text-decoration: underline;
+}
+
+/* Styles the search results box */
+.result-search {
+    width: 53rem; /* Maximum width of the results box */
+    height: 40vh; /* Maximum height of the results box */
+    overflow-y: auto; /* Adds vertical scroll if necessary */
+    overflow-x: hidden; /* Hides horizontal scroll */
+    margin-top: 1rem; /* Spacing above the results box */
+    padding: 1rem; /* Internal spacing */
+    border-radius: 0.6rem; /* Rounded border */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: flex-start; /* Aligns items to the start */
+    align-items: center; /* Centers items horizontally */
+}
+
+/* Styles each result item */
+.result-item {
+    background: #FFFFFF; /* Background color of items */
+    border-radius: 0.6rem; /* Rounded border */
+    padding: 1rem; /* Internal spacing */
+    margin-bottom: 1rem; /* Spacing below items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 590px;
+    height: 300px;
+    margin: 5px;
+}
+
+/* Styles the titles inside result items */
+.result-item h2 {
+    font-size: 1.5rem;
+    color: #292522;
+}
+
+/* Styles links inside result items */
+.result-item a {
+    text-decoration: none; /* Removes default underline from links */
+    color: #E58728; /* Text color of links */
+}
+
+/* Styles links on hover */
+.result-item a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Styles the meta description inside result items */
+.description-meta {
+    color: #292522;
+    font-size: 1.2rem;
+    margin: 0.5rem 0; /* Margin above and below */
+    text-align: center;
+}
+
+/* Styles the page footer */
+footer {
+    background-color: #F5F7F8; /* Background color of the footer */
+    color: #292522; /* Text color */
+    text-align: center; /* Aligns text to the center */
+    padding: 0; /* Internal spacing */
+    width: 100%; /* Full width of the page */
+    position: absolute; /* Positions the footer */
+    bottom: 0; /* Aligns to the bottom of the page */
+    font-size: 1rem; /* Font size */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Font size on smaller screens */
+        letter-spacing: 0.2rem; /* Letter spacing on smaller screens */
+    }
+
+    section input {
+        width: 25rem; /* Width of inputs on smaller screens */
+        padding: 0.8rem; /* Internal spacing on smaller screens */
+    }
+
+    .result-search {
+        width: 40rem; /* Width of results box on smaller screens */
+        height: 40vh; /* Height of results box on smaller screens */
+    }
+
+    .result-item h2 {
+        font-size: 1.3rem; /* Font size of titles on smaller screens */
+    }
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Font size on small screens */
+        letter-spacing: 0.1rem; /* Letter spacing on small screens */
+    }
+
+    section input {
+        width: 17rem; /* Width of inputs on small screens */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Internal spacing of button on small screens */
+        font-size: 0.9rem; /* Font size of button on small screens */
+    }
+
+    .result-search {
+        width: 90%; /* Width of results box on small screens */
+        height: 50vh; /* Height of results box on small screens */
+    }
+
+    .result-item h2 {
+        font-size: 1.1rem; /* Font size of titles on small screens */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Font size of footer on small screens */
+    }
+}

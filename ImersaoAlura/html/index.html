@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="app-background">
+    <main>
+        <header>
+            <h1>Music App</h1>
+        </header>
+        <section>
+
+            <!-- -->
+            <!-- Button to activate pop-up // gotta be above search button on code -->
+            <button id="profileButton">My profile</button>
+            <!-- Pop-up -->
+            <div id="profilePopup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2><a href="#" target="_self" class="redirects-button">User's profile</a><br></h2>
+                    <br>
+                    <a href="#" target="_self" class="redirects-button">Favorite songs</a><br>
+                    <br>
+                    <a href="#" target="_self" class="redirects-button">Favorite artists</a><br>
+                    <br>
+                    <a href="#" target="_self" class="redirects-button">Playlists</a><br>
+                    <br>
+                    <a href="#" target="_self" class="redirects-button">Settings</a><br>
+                    <br>
+                    <a href="#" target="_self" class="redirects-button">Help</a>
+                </div>
+            </div>
+            <!-- -->
+                <!-- Button to return // gotta be above search button on code -->
+                <button id="backButton">Return</button>
+            <!-- -->
+            <h2>Dive into a music universe tailored just for you!</h2>
+            <p class="description-meta">
+                Our app connects you with millions of songs, artists, and playlists, all according to your
+                taste.<br>Discover new sounds, relive your favorite classics, and create your own soundtracks for every
+                moment!
+            </p>
+            <input type="text" placeholder="Type a song or artist" id="search-space">
+            <button onclick="search()">Search</button>
+        </section>
+        <section class="result-search" id="result-search">
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Website made by Amabilly B. Russo during Alura's Dev Immersion</p>
+    </footer>
+    <script src="../js/data.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
